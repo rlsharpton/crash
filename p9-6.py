@@ -1,3 +1,10 @@
+#! python3
+__author__ = 'rls'
+__version__ = 0.1
+''' Program written by Robin Sharpton
+    rest of DocString goes here 
+'''
+
 class User_profile():
     '''A class that creates a basic user profile'''
 
@@ -13,11 +20,18 @@ class User_profile():
         print("Hello {} {}".format(self.first_name, self.last_name))
 
 class Admin(User_profile):
-    def __init__(self):
-        self.privileges = privileges
+    def __init__(self, first_name, last_name):
+        super().__init__(first_name, last_name)
+        self.privileges = ['add post', 'delete post', 'modify user']
+
+    def list_privileges(self):
+        print("The admin can {} do these things.".format(self.privileges))
 
 joe = User_profile('Joe', 'Blow')
 phil = User_profile('Phil', 'Jones')
 
 joe.describe_user()
+
 phil.describe_user()
+robin = Admin('Robin', 'Sharpton')
+robin.list_privileges()
