@@ -1,0 +1,15 @@
+name = 'ada lovelace'
+print(name.title())
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[2].title())
+bicycles.append(input("enter a new bike brand: "))
+print("You entered " + bicycles[-1])
+print(bicycles)
+popped_bicycle = bicycles.pop()
+print("now the list of bicycles is: ")
+print(bicycles)
+print(" and the popped bike brand is: ")
+print(popped_bicycle)
+bicycles.sort(reverse=True)
+print("now the list is in reverse sorted order")
+print(bicycles)
