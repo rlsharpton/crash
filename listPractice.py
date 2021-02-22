@@ -19,7 +19,12 @@ for value in range(1,11):
     square = value ** 2
     squares.append(square)
 
+# New work
+# previous rewritten as comprehension
+squares_comp = [value **2 for value in range(1,11)]
+
 print(squares)
+print(squares_comp)
 
 squaresComprehension = [value ** 2 for value in range(1,11)]
 print(squaresComprehension)
