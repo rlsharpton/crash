@@ -11,4 +11,4 @@ with open(filename) as f:
 highs = []
 for row in reader:
     try:
-        high = row.lstrip(')
+        high = int(row([4])(strip("\'"))
