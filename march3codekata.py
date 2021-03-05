@@ -1,8 +1,8 @@
 def sumofNum(n):
     """Simple function to sum numbers from 1 to n """
     num = 1
-    while num < n:
-        total = 0
+    total = 0
+    while num < (n + 1):        
         total = total + num
         print(f"total is: {total}")
         num += 1
